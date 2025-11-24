@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kinorg - Application de gestion de tâches familiales gamifiée. Motivez vos enfants avec des points, niveaux et récompenses. Privacy-first, sans tracking.">
+    <meta name="keywords" content="tâches familiales, gamification, enfants, motivation, parentalité, organisation">
+    <title>Kinorg - Tâches Familiales Gamifiées | Privacy-First</title>
+</head>
+<body>
+
+<header class="header">
+        <div class="header-content">
+            <a href="index.html" class="logo">🌟 Kinorg</a>
+            <nav class="nav">
+                <a href="features.html">Fonctionnalités</a>
+                <a href="pricing.html">Tarifs</a>
+                <a href="privacy.html">Confidentialité</a>
+                <a href="terms.html">CGU</a>
+                <a href="support.html">Support</a>
+            </nav>
+        </div>
+        <link rel="stylesheet" href="styles1.css">
+    </header>
+<body>
+    <div class="container">
+        <h1>Suppression de Compte et de Données</h1>
+        
+        <div class="info-box">
+            <p>Conformément au **RGPD** (droit à l'effacement), vous pouvez demander la suppression définitive de votre compte et de toutes les données personnelles associées. Veuillez lire les informations suivantes avant de procéder :</p>
+            <ul>
+                <li>⚠️ La suppression est **irréversible**.</li>
+                <li>Toutes vos données (profil, historique, favoris, etc.) seront effacées de nos serveurs, sauf exceptions légales.</li>
+                <li>Le processus peut prendre jusqu'à **30 jours** pour être finalisé.</li>
+            </ul>
+        </div>
+        
+        <form id="delete-form" class="delete-form">
+            <h2>Confirmer la Suppression</h2>
+            
+            <div class="form-group">
+                <label for="anonymous_id">Identifiant anonyme du compte :</label>
+                <input type="anonymous_id" id="anonymous_id" name="anonymous_id" required placeholder="ex: anon_1732186400_abc123xyz">
+            </div>
+            
+            <div class="form-group">
+                <label for="reason">Raison (Optionnel) :</label>
+                <textarea id="reason" name="reason" rows="3" placeholder="Aidez-nous à nous améliorer (ex: Je n'utilise plus ce service)."></textarea>
+            </div>
+
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="confirmation" name="confirmation" required>
+                <label for="confirmation">Je confirme vouloir supprimer définitivement mon compte et je comprends que cette action est irréversible.</label>
+            </div>
+
+            <button type="submit" id="submit-button" class="delete-button">Demander la Suppression Définitive</button>
+        </form>
+
+        <p id="response-message" class="hidden"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
