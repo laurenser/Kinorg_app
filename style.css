@@ -1,0 +1,98 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #e9ecef; /* Fond gris légèrement plus moderne */
+    color: #495057;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    max-width: 700px;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    color: #007bff;
+    font-size: 3em;
+    margin-bottom: 0.3em;
+}
+
+/* Styles du Compte à Rebours */
+#countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 0;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+#countdown > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#countdown span:first-child {
+    font-size: 3em;
+    font-weight: bold;
+    color: #28a745; /* Vert pour les chiffres */
+    line-height: 1;
+}
+
+#countdown span:last-child {
+    font-size: 0.9em;
+    text-transform: uppercase;
+    color: #6c757d;
+}
+
+/* Styles du Formulaire d'Abonnement */
+.subscribe-section {
+    margin-top: 30px;
+    padding: 20px;
+    border-top: 1px solid #dee2e6;
+}
+
+#subscribe-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#email-input {
+    padding: 12px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 6px 0 0 6px;
+    width: 60%;
+    font-size: 1em;
+    outline: none;
+}
+
+#subscribe-form button {
+    padding: 12px 20px;
+    background-color: #ffc107; /* Jaune/Orange pour le bouton */
+    color: #333;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#subscribe-form button:hover {
+    background-color: #e0a800;
+}
+
+#message {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #28a745; /* Vert pour le message de succès */
+}
